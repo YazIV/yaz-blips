@@ -1,5 +1,5 @@
 local blips = {
-    -- Example {title="", colour=, id=, x=, y=, z=},
+    -- Example {title="", colour=, id=, x=, y=, z=,  scale=},
 	{title="Pharmacy", colour=5, id=403, x=-174.26, y=6386.2, z=31.5, scale= 0.9},
 	{title="Pharmacy", colour=5, id=403, x=377.8, y=-828.67, z=29.29, scale= 0.9},
 	{title="Paleto's Mechanic Shop", colour=0, id=446, x=76.35, y=6524.18, z=31.25, scale= 0.8},
@@ -9,7 +9,6 @@ local blips = {
 	{title="Gem Pawnbrokers", colour=5, id=490, x=-1459.46, y=-413.61, z=35.75, scale= 0.8},
 	{title="Smelting", colour=70, id=436, x=1088.01, y=-2001.87, z=30.88, scale= 0.5},
   }
-vector3(-1459.46, -413.61, 35.75)
 Citizen.CreateThread(function()
 
     for _, info in pairs(blips) do
